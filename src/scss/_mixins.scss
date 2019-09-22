@@ -1,0 +1,28 @@
+@mixin _480 {   // Extra small (<576px) .col-
+  @media (max-width: 575px){
+    @content;
+  }
+}
+
+@mixin _768 {   // Small (>=576px) .col-sm-
+  @media (min-width: 576px) and (max-width: 991px){
+    @content;
+  }
+}
+
+@mixin _1200 {    // Large (>=992px) .col-lg-
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+//  В нужный блок кода CSS вставлять миксины, например:
+//  .div {
+//       display: none;
+//       font-size: 12px;
+//
+//       @include _768 {
+//         display: block;
+//         font-size: 18px;
+//       }
+//     }
