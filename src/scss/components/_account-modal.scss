@@ -1,0 +1,40 @@
+.account-modal {
+  border-radius: 0;
+  color: $darkBlack;
+
+  .close {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    margin: 0 0 0 auto;
+    opacity: 1;
+    background-color: $darkBlack;
+    color: white;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  &__submit {
+    padding: 16px 38px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: $darkBlack;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  &__submit:hover {
+    opacity: 0.75;
+  }
+  input {
+    border-radius: 0;
+    transition: box-shadow 300ms ease-in-out;
+  }
+  input:focus {
+    outline: none; // не работает
+    box-shadow: 0 0 5px 0 $lightGrey;
+  }
+}
