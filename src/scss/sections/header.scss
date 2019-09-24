@@ -1,7 +1,17 @@
 .header {
-  p {
-    color: red;
-    font-size: 20px;
+  height: 145px;
+  background-color: $darkGrey;
+
+  &__phone-number {
+    text-decoration: none;
+    color: white;
+  }
+  &__phone-number:hover span:last-child {
+    border-bottom: 1px solid white;
+  }
+  .mdi {
+    color: $mainOrange;
+    font-size: 16px;
   }
 
 }
