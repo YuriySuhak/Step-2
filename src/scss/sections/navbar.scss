@@ -1,0 +1,25 @@
+.navbar {
+  height: 54px;
+  background-color: $lightGrey;
+  font-size: 13px;
+  color: white;
+  &__wrapper {
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  &__info-bar {
+    a:hover {
+      border-bottom: 1px solid white;
+    }
+  }
+  &__account-bar {
+    a:hover span:last-child {
+      border-bottom: 1px solid white;
+    }
+    .mdi {
+      font-size: 16px;
+    }
+  }
+}
