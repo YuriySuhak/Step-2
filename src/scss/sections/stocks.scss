@@ -1,0 +1,96 @@
+.stocks {
+
+  & a {
+    text-decoration: none;
+  }
+  #sofa {
+    //height: 100%;
+    background-image: url("../img/stocks/1.jpg");
+    background-repeat: no-repeat;
+    //background-size: 100%;
+    padding: 33px;
+    &>div{
+      background-color: rgba(42, 42, 42, 0.4);
+      color: white;
+      padding-left: 20px;
+      padding-top: calc((153 / 420) * 100%);
+      padding-bottom: calc((21 / 420) * 100%);
+      text-transform: uppercase;
+      h3 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 36px;
+      }
+      div {
+        display: inline-block;
+        font-size: 50px;
+        padding: 20px;
+        margin-top: 25px;
+        border: white solid 5px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  #chair {
+    background-color: #e8edf7;
+
+ .stocks-chair-text {
+      //display: inline-block;
+   color: black;
+   text-transform: uppercase;
+   padding: 50px 20px;
+   span {
+     font-size: 30px;
+   }
+   p {
+     font-size: 24px;
+   }
+   h2 {
+     font-size: 30px;
+     color: #d58e32;
+   }
+    }
+    div:first-of-type {
+//background-image: url("../img/stocks/2.png");
+//      height: inherit;
+      //background-size: cover;
+    }
+    div:last-child {
+      //background-image: url("../img/stocks/3.png");
+      //height: inherit;
+      //background-size: auto;
+    }
+    div{
+      //box-sizing: border-box;
+      img {
+        max-width: 100%;
+        height: auto;
+        //display: block;
+      }
+    }
+
+  }
+  #special {
+    .stocks-special-text {
+      //width: 50%;
+      padding: 75px 25px;
+      span {
+        font-size: 24px;
+        color: #d58e32;
+      }
+      p {
+        font-size: 18px;
+        color: black;
+      }
+    }
+    div {
+      width: 49.5%;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+}
