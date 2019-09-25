@@ -1,7 +1,66 @@
 .header {
-  p {
-    color: red;
-    font-size: 20px;
+  height: 145px;
+  background-color: $darkGrey;
+
+  &__phone-number{
+    font-size: 16px;
+    color: white;
+
+    @include _480 {
+      font-size: 13px;
+    }
+
+    .mdi {
+      color: $mainOrange;
+      font-size: 32px;
+    }
   }
 
+  &__phone-number:hover span:last-child {
+    border-bottom: 1px solid white;;
+    color: white;
+  }
+
+  &__cart {
+    position: relative;
+    right: 14px;
+    background-color: $mainOrange;
+    border-radius: 5px;
+    color: white;
+
+    .mdi {
+      font-size: 22px;
+    }
+
+    &--counter {
+      height: 28px;
+      width: 28px;
+      position: absolute;
+      top: 25%;
+      right: -30%;
+      background-color: $darkGrey;
+      font-size: 14px;
+      text-align: center;
+      line-height: 28px;
+    }
+  }
+
+  &__cart:hover {
+    color: white;
+  }
+
+  &__logo {
+    width: 165px;
+    transform: translateX(-25%);
+    @include _768 {
+      transform: translateX(-15%);
+    }
+    @include _480 {
+      width: 115px;
+      transform: translateX(-15%);
+    }
+    img {
+      width: 100%;
+    }
+  }
 }

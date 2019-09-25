@@ -1,0 +1,22 @@
+.cart-modal-empty {
+  color: $veryLightGray;
+  line-height: 46px;
+
+  .close {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    margin: 0 0 0 auto;
+    opacity: 1;
+    background-color: $darkBlack;
+    color: white;
+  }
+  &__title {
+    font-size: 34px;
+    font-weight: 600;
+  }
+  &__description {
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
