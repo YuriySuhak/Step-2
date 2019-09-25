@@ -1,0 +1,99 @@
+.top-menu {
+  height: 85px;
+  border-bottom: 1px solid #d1d1d1;
+
+  &__navbar {
+    background-color: #fff;
+    position: relative;
+
+    .navbar-toggler {
+      color: $darkBlack;
+    }
+  }
+
+  &__search {
+    position: relative;
+
+    &--input {
+      width: 320px;
+      height: 47px;
+      box-sizing: border-box;
+      border: 1px solid black;
+      font-size: 14px;
+
+      &::-webkit-search-decoration,
+      &::-webkit-search-cancel-button,
+      &::-webkit-search-results-button,
+      &::-webkit-search-results-decoration {
+        display: none;
+      }
+
+      @include _480 {
+        width: 230px;
+      }
+    }
+    &--icon {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      font-size: 20px;
+      color: $darkBlack;
+      cursor: pointer;
+    }
+  }
+  &__link {
+    padding: 36px 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $darkBlack;
+    box-sizing: border-box;
+    @include _768 {
+      color: $dropMenuColor;
+      padding: 14px;
+      margin-right: 12px;
+
+      &--home {
+          padding-bottom: 28px;
+        &:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 130px;
+          width: 98px;
+          border-bottom: 1px solid $dropMenuColor;
+        }
+      }
+    }
+    &:hover {
+      color: white;
+      box-shadow: inset 0 4px black;
+      background-color: $mainOrange;
+      @include _768 {
+        color: white;
+        background-color: $darkGrey;
+        box-shadow: none;
+      }
+    }
+  }
+  &__list {
+    @include _768 {
+      height: 400px;
+      width: 150px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $darkGrey;
+      z-index: 1;
+      text-align: right;
+    }
+    &--close-btn {
+      padding: 0;
+      margin: 25px 6px;
+      span {
+        color: white;
+        font-size: 32px;
+      }
+    }
+  }
+}
