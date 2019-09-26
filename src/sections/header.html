@@ -1,4 +1,4 @@
-<header class="header d-flex align-items-center">
+<header class="header d-flex align-items-center" id="header">
     <div class="header__wrapper container d-flex justify-content-between align-items-center">
         <a href="#" class="header__phone-number text-decoration-none">
             <span class="mdi mdi-cellphone-iphone align-middle mr-1 d-none d-sm-inline"></span><span class="align-middle">2300 - 3560 - 222</span>
@@ -15,77 +15,4 @@
     </div>
 </header>
 
-<!--Пустая корзина-->
-<div class="modal fade" id="cart-empty">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content cart-modal-empty rounded-0">
-            <div class="modal-header p-0 border-0">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body mx-5 mb-4 text-center">
-                <p class="cart-modal-empty__title mb-3">Your cart is empty</p>
-                <p class="cart-modal-empty__description">But it's never too late to fix it :)</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Конец пустой корзины-->
-
-<!--Корзина с товаром-->
-<div class="modal fade" id="cart">
-    <div class="modal-dialog modal-xl" role="document">
-        <div class="modal-content cart-modal rounded-0">
-            <div class="modal-header p-0 border-0">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body cart-modal__list mx-4 mb-3">
-
-<!--                Шаблон товара-->
-                <div class="cart-modal__goods mx-0 px-2">
-                    <div class="grid-item-1">
-                        <img class="cart-modal__goods--image" src="img/products/furniture/14.png" alt="14">
-                    </div >
-                    <div class="grid-item-2">
-                        <a href="#" class="cart-modal__goods--title">Sunbaby Magic Bear Chair</a>
-                    </div>
-                    <div class="grid-item-3">
-                        <span class="cart-modal__goods--price">$350.00</span>
-                        <span class="cart-modal__goods--discount-price">$250.00</span>
-                    </div>
-                    <div class="grid-item-4">
-                        <span class="cart-modal__goods--quantity-text">Quantity:</span>
-                        <div class="cart-modal__goods--quantity-number">2</div>
-                        <div class="cart-modal__goods--quantity-minus">-</div>
-                        <div class="cart-modal__goods--quantity-plus">+</div>
-                    </div>
-                    <div class="grid-item-5">
-                        <div class="cart-modal__goods--sum-number">$500.00</div>
-                    </div>
-                </div>
-<!--                    Конец шаблона товара-->
-
-                <div class="cart-modal__total-amount d-flex justify-content-end">
-                    <span>Total:</span>
-                    <span class="cart-modal__total-amount--number">$1000</span>
-                </div>
-
-                <div class="cart-modal__footer d-flex justify-content-between">
-                    <button name="continue" type="button" class="cart-modal__continue" data-dismiss="modal">
-                        <span class="mdi mdi-chevron-right align-middle"></span>
-                        Continue
-                    </button>
-                    <button name="submit" type="button" class="cart-modal__submit">
-                        <span class="mdi mdi-cart-outline align-middle"></span>
-                        Buy now
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Конец корзины с товаром-->
 

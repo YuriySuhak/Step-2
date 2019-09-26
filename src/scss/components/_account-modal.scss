@@ -9,6 +9,10 @@
     opacity: 1;
     background-color: $darkBlack;
     color: white;
+    &:hover {
+      background-color: $mainOrange;
+      opacity: 1 !important;
+    }
   }
   &__title {
     text-transform: uppercase;
@@ -24,10 +28,13 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
+    &:hover {
+      background-color: $mainOrange;
+      opacity: 1 !important;
+    }
   }
-  &__submit:hover {
-    opacity: 0.75;
-  }
+
   input {
     border-radius: 0;
     transition: box-shadow 300ms ease-in-out;
