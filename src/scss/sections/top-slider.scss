@@ -1,0 +1,107 @@
+.top-slider {
+  margin-bottom: 75px;
+  position: relative;
+
+  .carousel-inner {
+    height: 500px;
+
+    @include _480 {
+      height: 300px;
+    }
+
+    .carousel-item > img {
+      object-fit: cover;
+      object-position: center center;
+      height: 100%;
+    }
+  }
+
+  &__inner-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    top: (505px - 220px)/2;
+    height: 214px;
+    width: 100%;
+    text-align: center;
+
+    @include _480 {
+      display: block;
+      top: 35px;
+      bottom: 55px;
+      left: 15px;
+      right: 15px;
+      width: auto;
+      height: auto;
+      text-align: center;
+    }
+
+    &--title {
+      color: white;
+      font-size: 46px;
+      font-weight: 300;
+      text-transform: uppercase;
+
+      @include _480 {
+        font-size: 32px;
+        margin-top: 30px;
+      }
+
+      span {
+        font-weight: 600;
+      }
+    }
+    &--subtitle {
+      color: white;
+      font-size: 24px;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-top: 10px;
+
+      @include _480 {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    }
+    &--button {
+      position: absolute;
+      bottom: -26px;
+      background-color: white;
+      padding: 20px 30px;
+      font-size: 14px;
+      font-weight: 600;
+      color: $darkBlack;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 5px;
+
+      @include _480 {
+        bottom: 30px;
+        left: calc(50% - 136px/2);
+      }
+    }
+  }
+
+  &__btn-prev, &__btn-next {
+    background-color: $darkBlack;
+    opacity: 1;
+    top: auto;
+    height: 40px;
+    width: 50%;
+
+    @include _480 {
+      height: 32px;
+    }
+
+    &:hover {
+      background-color: $mainOrange;
+      opacity: 1;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      height: 12px;
+    }
+  }
+}
