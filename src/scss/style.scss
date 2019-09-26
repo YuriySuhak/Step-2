@@ -5,6 +5,10 @@
 @import './mixins';
 @import './reset';
 
+html {
+  scroll-behavior: smooth;
+}
+
 @import './sections/sections';
 @import "./components/components";
 
