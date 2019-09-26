@@ -35,53 +35,62 @@
 
     &--number {
       padding: 0 20px 20px 5px;
+
+      @include _480 {
+        padding: 0 10px 18px 5px;
+      }
     }
   }
-
-  &__submit {
+  &__submit, &__continue {
     position: relative;
     padding: 14px 36px 13px;
     font-size: 13px;
     font-weight: 600;
     color: white;
-    background-color: $darkBlack;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
 
-    &:hover {
-      background-color: $mainOrange;
-      opacity: 1 !important;
+    @include _480 {
+      padding: 11px 26px 10px;
+      font-size: 12px;
     }
+  }
+  &__submit {
+    background-color: $mainOrange;
 
+    &:hover {
+      opacity: 0.7;
+    }
     .mdi {
       font-size: 22px;
       position: absolute;
       left: 8px;
       top: 11px;
+      @include _480 {
+        left: 6px;
+        top: 8px;
+        font-size: 18px;
+      }
     }
   }
   &__continue {
-    position: relative;
-    padding: 14px 36px 13px;
-    font-size: 13px;
-    font-weight: 600;
-    color: white;
     background-color: $veryLightGray;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
 
     &:hover {
       background-color: $mainOrange;
-      opacity: 1 !important;
+      opacity: 1;
     }
-
     .mdi {
       font-size: 26px;
       position: absolute;
       left: 6px;
       top: 7px;
+      @include _480 {
+        left: 3px;
+        top: 7px;
+        font-size: 22px;
+      }
     }
   }
 

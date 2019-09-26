@@ -1,5 +1,10 @@
 console.log("Test");
 
+$(".top-menu .nav-link").on("click", function(){
+    $(".top-menu .navbar-nav").find(".active").removeClass("active");
+    $(this).addClass("active");
+});
+
 const $goodsList = [
     {
         id: 1,
