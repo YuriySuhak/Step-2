@@ -9,12 +9,13 @@
         <a href="#cart" class="header__cart p-3 text-decoration-none" data-toggle="modal">
             <span class="mdi mdi-cart-outline align-middle"></span>
             <div class="header__cart--counter rounded-circle">
-                <span>0</span>
+                <span class="header__cart--quantity">2</span>
             </div>
         </a>
     </div>
 </header>
 
+<!--Пустая корзина-->
 <div class="modal fade" id="cart-empty">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content cart-modal-empty rounded-0">
@@ -30,7 +31,9 @@
         </div>
     </div>
 </div>
+<!--Конец пустой корзины-->
 
+<!--Корзина с товаром-->
 <div class="modal fade" id="cart">
     <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content cart-modal rounded-0">
@@ -39,7 +42,9 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body mx-4 mb-3">
+            <div class="modal-body cart-modal__list mx-4 mb-3">
+
+<!--                Шаблон товара-->
                 <div class="cart-modal__goods mx-0 px-2">
                     <div class="grid-item-1">
                         <img class="cart-modal__goods--image" src="img/products/furniture/14.png" alt="14">
@@ -58,9 +63,14 @@
                         <div class="cart-modal__goods--quantity-plus">+</div>
                     </div>
                     <div class="grid-item-5">
-<!--                        <span class="cart-modal__goods&#45;&#45;sum-text">Sum</span>-->
-                        <div class="cart-modal__goods--sum-number">$250.00</div>
+                        <div class="cart-modal__goods--sum-number">$500.00</div>
                     </div>
+                </div>
+<!--                    Конец шаблона товара-->
+
+                <div class="cart-modal__total-amount d-flex justify-content-end">
+                    <span>Total:</span>
+                    <span class="cart-modal__total-amount--number">$1000</span>
                 </div>
 
                 <div class="cart-modal__footer d-flex justify-content-between">
@@ -77,4 +87,5 @@
         </div>
     </div>
 </div>
+<!--Конец корзины с товаром-->
 
