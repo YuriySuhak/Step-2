@@ -1,0 +1,51 @@
+#footer {
+  background: #363636 !important;
+  padding: 20px 0;
+
+  section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+    h5{
+    padding-bottom: 6px;
+    margin-top: 40px;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 255);
+  }
+    a {
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+  }
+    ul.social li{
+    margin-top: 29px;
+    margin-right: 6px;
+      margin-bottom: 59px;
+  }
+
+  ul.quick-links li a{
+    color: rgba(169, 169, 169, 255);
+  }
+
+  ul.quick-links li:hover{
+    text-decoration: underline;
+    //треба змінити на нижній борд
+  }
+  ul.quick-links li a i{
+    margin-right: 5px;
+  }
+  ul.quick-links li:hover a i {
+    font-weight: 700;
+  }
+}
+
+@media (max-width:767px){
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+}
