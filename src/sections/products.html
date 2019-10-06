@@ -1,10 +1,10 @@
 <section class="products container">
     <div class="row products-title">
-        <h2 class="col-9">furniture</h2>
-        <h3 class="col-3">Filter By categories</h3>
+        <h2 class="col-12 col-lg-9">furniture</h2>
+        <h3 class="d-none d-lg-block col-3"></h3>
     </div>
     <div class="row">
-        <div class="furniture col-9 d-flex flex-wrap justify-content-between">
+        <div class="furniture col-12 col-lg-9 d-flex flex-wrap justify-content-between">
             <div class="card furniture-card">
                 <div class="furniture-card-imgbox">
                     <img class="card-img-top" src="img/products/furniture/1.png" alt="Card image cap">
@@ -234,7 +234,7 @@
         <div class="filters col-3">
             <div class="filters-block">
                 <h3>Filter By categories</h3>
-                <ul class="list-group">
+                <ul class="list-group filters-block-body">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         > &#8195 Furniture
                         <span class="badge badge-dark badge-pill">3</span>
@@ -259,79 +259,81 @@
             </div>
             <div class="filters-block">
                      <h3>Filter By Price</h3>
-                <div id="rangeBox">
+                <div id="rangeBox"  class="filters-block-body">
                     <div id="sliderBox">
                         <input type="range" class="custom-range slider-selection" id="slider0to50" step="1" min="0" max="500">
                         <input type="range" class="custom-range slider-selection" id="slider51to100" step="1" min="0" max="500">
                     </div>
                     <div id="inputRange">
-                        <input type="number" step="1" min="0" max="50" placeholder="Min" id="min" >
-                        <input type="number" step="1" min="500" max="100" placeholder="Max" id="max">
+                        <button class="btn d-inline-block">Filter</button>
+                        <div class="d-inline-block">
+                            <input type="number" step="1" min="0" max="50" placeholder="Min" id="min" >
+                            <input type="number" step="1" min="500" max="100" placeholder="Max" id="max">
+                        </div>
                     </div>
                 </div>
 
-                <span>Current Slider Value: <span id="ex6SliderVal">3</span></span>
-                <input id="ex1Slider" class="custom-range slider-selection" type="range" data-slider-min="0" data-slider-max="200" data-slider-step="1" data-slider-value="135" />
-
-                <h2 class="display-4" style="color:#0d47a1"><strong id="resellerEarnings">0$</strong></h2>
-                <h2 class="display-4" style="color:#0d47a1"><strong id="clientPrice">500$</strong></h2>
 
             </div>
             <div class="filters-block">
                 <h3>Filter By color</h3>
-                <!-- Default unchecked -->
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked1">
-                    <label class="custom-control-label" id="checkbox-red" for="defaultUnchecked1">Red</label>
+                <div class="filters-block-body">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked1">
+                        <label class="custom-control-label" id="checkbox-red" for="defaultUnchecked1">Red</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
+                        <label class="custom-control-label" id="checkbox-black" for="defaultUnchecked2">Black</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
+                        <label class="custom-control-label" id="checkbox-yellow" for="defaultUnchecked3">Yellow</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked4">
+                        <label class="custom-control-label" id="checkbox-blue" for="defaultUnchecked4">Blue</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked5">
+                        <label class="custom-control-label" id="checkbox-pink" for="defaultUnchecked5">Pink</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked6">
+                        <label class="custom-control-label" id="checkbox-green" for="defaultUnchecked6">Green</label>
+                    </div>
                 </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
-                    <label class="custom-control-label" id="checkbox-black" for="defaultUnchecked2">Black</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
-                    <label class="custom-control-label" id="checkbox-yellow" for="defaultUnchecked3">Yellow</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked4">
-                    <label class="custom-control-label" id="checkbox-blue" for="defaultUnchecked4">Blue</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked5">
-                    <label class="custom-control-label" id="checkbox-pink" for="defaultUnchecked5">Pink</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked6">
-                    <label class="custom-control-label" id="checkbox-green" for="defaultUnchecked6">Green</label>
-                </div>
-
+            </div>
             <div class="filters-block">
                 <h3>Filter By size</h3>
-                <div class="custom-control custom-checkbox">
+                <div class="filters-block-body">
+                    <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" id="sizeBox1">
                     <label class="custom-control-label" for="sizeBox1">S</label>
                 </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="sizeBox2">
-                    <label class="custom-control-label" for="sizeBox2">M</label>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="sizeBox2">
+                        <label class="custom-control-label" for="sizeBox2">M</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="sizeBox3">
+                        <label class="custom-control-label" for="sizeBox3">L</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="sizeBox4">
+                        <label class="custom-control-label" for="sizeBox4">XL</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="sizeBox5">
+                        <label class="custom-control-label" for="sizeBox5">XXL</label>
+                    </div>
                 </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="sizeBox3">
-                    <label class="custom-control-label" for="sizeBox3">L</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="sizeBox4">
-                    <label class="custom-control-label" for="sizeBox4">XL</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="sizeBox5">
-                    <label class="custom-control-label" for="sizeBox5">XXL</label>
-                </div>
+
             </div>
             <div class="filters-block">
                 <h3>Filter By tags</h3>
 
-                <div class="btn-group btn-group-toggle d-flex flex-wrap justify-content-start" data-toggle="buttons">
+                <div class="filters-block-body btn-group btn-group-toggle d-flex flex-wrap justify-content-start" data-toggle="buttons">
                     <label class="btn btn-outline-secondary">
                         <input type="checkbox" checked autocomplete="off">
                         <span class="mdi mdi-tag-multiple"></span>&#8194 Table</label>
@@ -354,5 +356,5 @@
             </div>
         </div>
     </div>
-    </div>
+
 </section>
