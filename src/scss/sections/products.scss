@@ -112,6 +112,19 @@
     }
   }
   .filters {
+    h3 {
+      font-size: 16px;
+      color: rgba(42, 42, 42, 255);
+      text-transform: uppercase;
+      font-weight: 600;
+      //margin-top: -29px;
+      padding-bottom: 14px;
+    }
+    .filters-block-body {
+      border-top: 1px black solid;
+      padding-top: 29px;
+      margin-bottom: 60px;
+    }
     .list-group-item {
       border: none;
       padding: 0.75rem 0;
@@ -214,7 +227,15 @@
 #inputRange{
   position:relative;
   top:50%;
-  border: black 1px solid;
+  //border: black 1px solid;
+  button {
+    font-size: 14px;
+    padding: 11px 13px;
+  }
+  div.d-inline-block {
+    padding: 9px 15px;
+    border: black 1px solid;
+  }
 }
 #inputRange::after{
   content:"";
@@ -222,10 +243,10 @@
   display:block
 }
 #inputRange #min{
-  width:40%;
-  float:left;
+  //width:20%;
+  //float:left;
 }
 #inputRange #max{
-  width:40%;
-  float:right;
+  //width:20%;
+  //float:right;
 }
