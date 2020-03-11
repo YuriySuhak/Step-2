@@ -1,6 +1,6 @@
-FEM-3, Step Project "Online one page shop".
-
-Bootstrap 4, Gulp.
+#Step-2 Project
+"Online one page shop".<br>
+<b>Bootstrap 4, Gulp.</b>
 
 authors:
 Юрій Сугак: Stocks, Products, Blog, Subscribe, Footer, Copyright.
